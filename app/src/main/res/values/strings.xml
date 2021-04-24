@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Score365Test</string>
+    <string name="game_active_status">InProgress</string>
+    <string name="game_ended_status">Ended</string>
+</resources>

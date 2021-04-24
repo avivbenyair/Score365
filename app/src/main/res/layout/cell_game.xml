@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/cell_dark_game_background"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/comp_1_flag"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="7dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/comp_1_name"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/view"
+        android:gravity="left"
+        android:ellipsize="end"
+        app:layout_constraintLeft_toRightOf="@+id/comp_1_flag"
+        app:layout_constraintTop_toTopOf="parent"
+
+        tools:text="'דכקkishiuheuioonoihoihjכ'ק'ע'ק" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:background="@color/cell_small_center_bright_game_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/game_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:gravity="center"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        app:layout_constraintLeft_toLeftOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        tools:text="2/2/2" />
+
+    <androidx.constraintlayout.widget.Group
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/score_grope"
+        android:visibility="invisible"
+        app:constraint_referenced_ids="game_status,score_comp_1,score_comp_2,score_divider"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/score_comp_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginRight="5dp"
+        android:textSize="15sp"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintEnd_toStartOf="@+id/score_divider"
+        app:layout_constraintLeft_toLeftOf="@+id/score_divider"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/comp_1_flag"
+        tools:text="2" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/score_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/score_comp_1"
+        app:layout_constraintLeft_toLeftOf="@+id/view"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@id/score_comp_1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/score_comp_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginLeft="5dp"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/score_divider"
+        app:layout_constraintTop_toTopOf="@+id/comp_2_flag"
+        tools:text="2" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/game_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintLeft_toLeftOf="@+id/view"
+        app:layout_constraintRight_toRightOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/score_divider"
+        tools:text="ended" />
+
+
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/comp_2_flag"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginRight="7dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/comp_2_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toRightOf="@+id/view"
+        android:gravity="right"
+        android:ellipsize="end"
+        tools:text="sfdhoisfhofishfoi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/comp_2_flag"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

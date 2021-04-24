@@ -1,0 +1,30 @@
+package com.example.score365test.network.response
+
+data class Player(
+    val AthleteID: Int,
+    val EventOrder: Int,
+    val FieldLine: Int,
+    val FieldPosition: Int,
+    val FieldSide: Int,
+    val FormationPosition: Int,
+    val HasStats: Boolean,
+    val HeatMap: String,
+    val ImgVer: Int,
+    val JerseyNum: Int,
+    val Line: Int,
+    val Nationality: Int,
+    val PBPEventKey: String,
+    val PID: Int,
+    val PlayerName: String,
+    val PlayerNum: Int,
+    val PlayerSName: String,
+    val PopularityRank: Int,
+    val Position: Int,
+    val Ranking: Double,
+    val Status: Int,
+    val SubstituteStatus: Int,
+    val SubstituteTime: Double,
+    val SubstituteType: Int,
+    val SubstitutedPlayer: Int,
+    val SubstitutedPlayerNum: Int
+)
